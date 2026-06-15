@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { FloatingHearts } from './AnimatedBackground'
 import type { DateDetails } from '../types'
+import { HER_NAME } from '../data/personalization'
 
 interface ConfirmationScreenProps {
   details: DateDetails
@@ -98,7 +99,7 @@ export default function ConfirmationScreen({ details }: ConfirmationScreenProps)
           animate={{ opacity: 1 }}
           transition={{ delay: 0.9 }}
         >
-          Thank you for saying yes. No matter where we go, my favorite part of
+          Thank you for saying yes, {HER_NAME}. No matter where we go, my favorite part of
           the date will always be spending time with you. ❤️
         </motion.p>
       </motion.div>

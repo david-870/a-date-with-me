@@ -1,6 +1,14 @@
 import { useCallback, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { MAX_NO_ATTEMPTS, NO_MESSAGES } from '../data/dateTypes'
+import { MAX_NO_ATTEMPTS } from '../data/dateTypes'
+import { HER_NAME } from '../data/personalization'
+
+const NO_MESSAGES = [
+  `Are you sure, ${HER_NAME}? 🥺`,
+  `Think again, ${HER_NAME} ❤️`,
+  'I planned this with love 😘',
+  'One more chance? 💕',
+] as const
 
 interface QuestionPageProps {
   onYes: () => void
@@ -53,7 +61,7 @@ export default function QuestionPage({ onYes }: QuestionPageProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          Will you go on a special date with me? ❤️
+          {HER_NAME}, will you go on a special date with me? ❤️
         </motion.h1>
 
         <AnimatePresence mode="wait">

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { FallingHearts } from './AnimatedBackground'
 import MusicToggle from './MusicToggle'
 import { fireCelebrationConfetti } from '../utils/confetti'
+import { HER_NAME } from '../data/personalization'
 
 interface CelebrationPageProps {
   onContinue: () => void
@@ -48,7 +49,7 @@ export default function CelebrationPage({ onContinue }: CelebrationPageProps) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          You just made me the happiest person alive ❤️
+          You just made me the happiest person alive, {HER_NAME} ❤️
         </motion.h1>
 
         <motion.p

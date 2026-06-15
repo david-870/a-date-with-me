@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { HER_NAME } from '../data/personalization'
 
 const paragraphs = [
-  { text: 'My Love ❤️', isTitle: true },
+  { text: HER_NAME, isTitle: true },
   {
     text: 'Every moment with you is my favorite moment.',
     isTitle: false,
