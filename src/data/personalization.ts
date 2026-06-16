@@ -1,1 +1,1 @@
-export const HER_NAME = 'Piccola 🦋'
+export const HER_NAME = 'Baby girl 🦋'
